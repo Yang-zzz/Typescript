@@ -1,1 +1,1 @@
-# Typescript
+# Typescript Pracitc & study repository
