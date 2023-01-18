@@ -27,6 +27,7 @@ type Cat = { age: number } & Animal3; //타입 에일리어스로 가능
 // type은 중복선언 불가능
 // & 은 복사의 뜻은 아니고 두 타입 전부 만족하는 타입이라는 뜻
 
+
 // 숙제1
 interface Product {
   brand: string;
@@ -60,17 +61,18 @@ let 장바구니2: 상품2[] = [
   { product: "삼다수", price: 800, card: false },
 ];
 
+
 // 숙제4
 interface 플마 {
-  plus: (a: number, b: number) => number;
-  minus: (a: number, b: number) => number;
+  plus : (a:number, b: number) => number,
+  minus : (a:number, b: number) => number
 }
 
-let 계산기: 플마 = {
-  plus(a, b) {
-    return a + b;
+let 계산기 : 플마 = {
+  plus(a,b) {
+    return a+b
   },
-  minus(a, b) {
-    return a - b;
-  },
-};
+ minus(a,b) {
+   return a-b
+ }
+}

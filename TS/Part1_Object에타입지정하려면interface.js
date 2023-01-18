@@ -21,5 +21,5 @@ var 계산기 = {
     },
     minus: function (a, b) {
         return a - b;
-    },
+    }
 };

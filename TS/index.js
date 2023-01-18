@@ -1,13 +1,12 @@
 // 내로잉 을 써야함 (인자의 타입이 불확실한 경우)
-function 내함수(x) {
-    if (typeof x === "string") {
-        return x + "1";
-    }
-    else {
-        return x + 1;
-    }
-}
-내함수(123);
+// function 내함수(x: number | string) {
+//   if (typeof x === "string") {
+//     return x + "1";
+//   } else {
+//     return x + 1;
+//   }
+// }
+// 내함수(123);
 //방법2
 function 내함수2(x) {
     var array = [];
