@@ -22,22 +22,37 @@ class Car {
     this.model = a;
     this.price = b;
   }
-  tax() :number {
-     let result =  this.price / 10;
-     return result
+  tax(): number {
+    let result = this.price / 10;
+    return result;
   }
 }
 
-let car1 = new Car('소나타', 3000)
-console.log(car1)
-console.log(car1.tax())
+let car1 = new Car("소나타", 3000);
+console.log(car1);
+console.log(car1.tax());
 
-// // 숙제2
-// class Word {
-//     str: string;
-//     num: number;
-//     constructor(a: number, b: string ) {
-//         this.str = b;
-//         this.num = a;
-//     }
-// }
+// 숙제2
+class Word {
+  str;
+  num;
+
+  constructor(...param: (number | string)[]) {
+    let 숫자들: number[] = [];
+    let 문자들: string[] = [];
+
+    param.forEach((i) => {
+      if (typeof i === "string") {
+        문자들.push(i);
+      } else {
+        숫자들.push(i);
+      }
+    });
+    this.num = 숫자들;
+    this.str = 문자들;
+  }
+}
+
+let obj = new Word("kim", 3, 5, "park");
+console.log(obj.num);
+console.log(obj.str);
