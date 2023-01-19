@@ -16,7 +16,7 @@ function 테스트함수2(animal: Fish | Bird) {
 
 // test오브젝트2 instanceof 부모class
 
-//예제
+// 예제
 let 날짜 = new Date();
 if (날짜 instanceof Date) {
 }
