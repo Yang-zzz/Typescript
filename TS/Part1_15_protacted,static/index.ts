@@ -1,9 +1,8 @@
-// protected
-// {} 안에서만 사용 가능
+// Protected
+// private과 동일하게 class {} 범위 안에서만 사용 가능
 class TestUser {
-  protected x = 10;
-  // private 팔드는 해당 클레스에게 상속받은 자식 클래스에서 쓸 수 없다.
-  // protexted 는 가능
+  protected x = 10; // o
+  // private x = 10; // x
 }
 
 class NewUser extends TestUser {
@@ -12,18 +11,22 @@ class NewUser extends TestUser {
   }
 }
 
-//static
+// 차이점
+// private 키워드가 부여된 변수는 해당 클래스에게 상속받은(extends) 클래스에서 쓸 수 없다.
+// protected 키워드가 부여된 변수는 해당 클래스에게 상속받은(extends) 클래스에서 사용 할 수 있다.
 
+// Static
 class TestUser2 {
   // private static x = 10;
   static x = 10;
   y = 20;
 }
-// 부모에 직접, 자녀에게 상속 x
 
 let 테스트자식 = new TestUser2();
-// console.log(테스트자식.x);
-console.log(TestUser2.x);
+// console.log(테스트자식.x); // TestUser2()를 통해 생성된 instance 테스트자식에서는 'x' 에 접근이 안됨
+console.log(TestUser2.x); // TestUser2() 클래스가 직접 접근할 경우 가능
+// static 변수 또는 함수에 키워드가 있다면, 부모 클래스를 통해 접근해야 사용 가능함. 해당 변수(또는 함수)는 자녀에게 상속되지 않음.
+
 
 class TestUser3 {
   static skill = "js";
