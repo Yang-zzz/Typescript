@@ -32,7 +32,9 @@ namespace DogString {
   export type Dog = string;
 }
 namespace DogObj {
-  export interface Dog { name: string };
+  export interface Dog {
+    name: string;
+  }
 }
 
 let dog1: DogString.Dog = "강아지";
