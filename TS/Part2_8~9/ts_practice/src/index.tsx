@@ -6,9 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 
-const 초기값 :{count:number} = { count: 0 };
+const 초기값: { count: number } = { count: 0 };
 
-function reducer(state = 초기값, action: {type : string}) {
+function reducer(state = 초기값, action: { type: string }) {
   if (action.type === "증가") {
     return { ...state, count: state.count + 1 };
   } else if (action.type === "감소") {

@@ -1,4 +1,3 @@
-"use strict";
 var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
         if (ar || !(i in from)) {
@@ -8,7 +7,6 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var 멍멍 = ["dog", true];
 var 멍멍2 = ["dog", true]; // tuple type 자료순서까지 타입지정 할때 사용
 var 멍멍3 = ["dog", true]; // 옵션기능도 가능
@@ -59,3 +57,4 @@ function 분류기함수() {
     });
 }
 분류기함수();
+export {};
