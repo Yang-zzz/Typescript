@@ -4,7 +4,7 @@
     "module": "es6",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "declaration": true, // d.ts. 파일 자동생성
+    // "declaration": true, // d.ts. 파일 자동생성
     "typeRoots": ["./types"]
   }
 }
