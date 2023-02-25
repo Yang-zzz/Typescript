@@ -8,3 +8,4 @@ var 함수 = function (a) {
 함수({ abc: '이게맞어?' });
 export {};
 // 숙제3
+//# sourceMappingURL=index.js.map

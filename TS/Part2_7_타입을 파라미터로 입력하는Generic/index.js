@@ -24,3 +24,4 @@ function 함수테스트4(x) {
 var a4 = 함수테스트4(["100"]);
 // extends 우측에 명시되어 있는 타입인지 확인 시켜달라는 뜻 (커스텀타입도 가능함)
 // Mytype 이 LengthCheck 타입을 만족시키는지 (LengthCheck 커스텀 속성을 가지고 있는지) 확인
+//# sourceMappingURL=index.js.map

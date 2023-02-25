@@ -45,3 +45,4 @@ function 숙제함수2(_a) {
     console.log(a, b, c);
 }
 숙제함수2([40, "wine", false]);
+//# sourceMappingURL=Part1_rest.js.map

@@ -7,3 +7,4 @@ var test4;
 var test5;
 var test6;
 var test7;
+//# sourceMappingURL=index.js.map

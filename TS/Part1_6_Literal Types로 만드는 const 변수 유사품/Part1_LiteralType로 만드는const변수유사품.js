@@ -19,3 +19,4 @@ var 자료 = {
 function 내함수(a) {
 }
 내함수(자료.name);
+//# sourceMappingURL=Part1_LiteralType%EB%A1%9C%20%EB%A7%8C%EB%93%9C%EB%8A%94const%EB%B3%80%EC%88%98%EC%9C%A0%EC%82%AC%ED%92%88.js.map

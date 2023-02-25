@@ -61,3 +61,4 @@ console.log(check(철수쌤)); // 'math'
 console.log(check(영희쌤)); // 'english'
 console.log(check(민수쌤)); // "korean"
 // console.log(check(지성샘)); // 타입에러
+//# sourceMappingURL=index2.js.map

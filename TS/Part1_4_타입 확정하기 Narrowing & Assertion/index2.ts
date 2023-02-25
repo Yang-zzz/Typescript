@@ -1,4 +1,5 @@
 // 내로잉 을 써야함 (인자의 타입이 불확실한 경우)
+
 // function 내함수(x: number | string) {
 //   if (typeof x === "string") {
 //     return x + "1";
@@ -52,7 +53,7 @@ function check(x: { subject: string | string[] }) {
   } else if (Array.isArray(x.subject)) {
     return x.subject.pop();
   } else {
-    return "없다."
+    return "없다.";
   }
 }
 let 지성샘 = { hello: "hi" };
