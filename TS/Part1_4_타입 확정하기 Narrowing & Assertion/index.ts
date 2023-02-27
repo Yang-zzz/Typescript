@@ -38,7 +38,7 @@ function 결혼가능하냐(x: number, y: boolean, z: string): string | void {
 }
 console.log(결혼가능하냐(100, true, "상"));
 
-// 숙제 1
+// 숙제 1 (forEach)
 // function filterString(x: (number | string)[]) {
 //   let testArray: number[] = [];
 //   x.forEach((a) => {
@@ -52,14 +52,15 @@ console.log(결혼가능하냐(100, true, "상"));
 // }
 // console.log(filterString([1,2,'3',4,'5']));
 
-function 숙제1(x: (number | string)[]) {
-  let testArray: number[] = [];
-  for (let i = 0; i < x.length; i++) {
-    if (typeof x[i] === "string") {
-      testArray.push(parseInt(x[i]));
-    } else if(typeof x[i] === "number") {
-      testArray.push(parseInt(x[i]));
-    }
-  }
-  return testArray
-}
+// 숙제 1 (for 반복문)
+// function 숙제1(x: (number | string)[]) {
+//   let testArray: number[] = [];
+//   for (let i = 0; i < x.length; i++) {
+//     if (typeof x[i] === "string") {
+//       testArray.push(parseInt(x[i]));
+//     } else if(typeof x[i] === "number") {
+//       testArray.push(parseInt(x[i]));
+//     }
+//   }
+//   return testArray
+// }
