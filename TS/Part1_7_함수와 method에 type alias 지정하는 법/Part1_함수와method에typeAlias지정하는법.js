@@ -15,4 +15,3 @@ function removeDash(x) {
     return parseFloat(result);
 }
 //문제2
-//# sourceMappingURL=Part1_%ED%95%A8%EC%88%98%EC%99%80method%EC%97%90typeAlias%EC%A7%80%EC%A0%95%ED%95%98%EB%8A%94%EB%B2%95.js.map

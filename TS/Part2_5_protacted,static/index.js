@@ -100,4 +100,3 @@ var Square = /** @class */ (function () {
 }());
 var test네모 = new Square(30, 30, "red");
 test네모.draw();
-//# sourceMappingURL=index.js.map

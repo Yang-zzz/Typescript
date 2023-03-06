@@ -22,4 +22,3 @@ var Person2 = /** @class */ (function () {
 }());
 var 자식 = new Person2('kim');
 console.log(자식);
-//# sourceMappingURL=index.js.map

@@ -4,7 +4,12 @@ var 동물2 = { name: "kim", age: 20 };
 var 여친 = {
     name: "엠버",
 };
-var position = { x: 10, y: 20 }; // extend 한다 라고 함.
+var position = { x: 10, y: 20 }; // 전문용어로 'extend' 한다 라고 함.
 var note = { color: "red", size: 5, position: [12] };
-//숙제3 다음을 만족하는 type
-//# sourceMappingURL=Part1_%EB%B3%80%EC%88%98%EC%97%90%EB%8B%B4%EA%B8%B0&readonly.js.map
+var testt = { name: "kim", phone: 123, email: "abc@naver.com" };
+var testt2 = {
+    name: "kim",
+    phone: 123,
+    email: "abc@naver.com",
+    adult: true,
+};

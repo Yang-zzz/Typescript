@@ -4,4 +4,3 @@ var 테스트변수;
 var dog1 = "강아지";
 var dog2 = { name: "아무거나" };
 export {};
-//# sourceMappingURL=a.js.map

@@ -1,4 +1,4 @@
-// 내로잉 을 써야함 (인자의 타입이 불확실한 경우)
+// 인자의 타입이 불확실한 경우 narrowing 을 써야함
 
 // function 내함수(x: number | string) {
 //   if (typeof x === "string") {
@@ -9,7 +9,7 @@
 // }
 // 내함수(123);
 
-//방법2
+// 방법2
 function 내함수2(x: number | string) {
   let array: number[] = [];
   if (typeof x === "number") {

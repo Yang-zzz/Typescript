@@ -5,7 +5,7 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "declaration": true, // d.ts. 파일 자동생성
-    "typeRoots": ["./types"],
-    "sourceMap": true
+    "typeRoots": ["./types"]
+    // "sourceMap": true
   }
 }

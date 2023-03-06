@@ -23,4 +23,3 @@ var 계산기 = {
         return a - b;
     }
 };
-//# sourceMappingURL=Part1_Object%EC%97%90%ED%83%80%EC%9E%85%EC%A7%80%EC%A0%95%ED%95%98%EB%A0%A4%EB%A9%B4interface.js.map

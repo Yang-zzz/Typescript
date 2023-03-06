@@ -20,4 +20,3 @@ function 테스트함수3(x) {
         console.log(x.color);
     }
 }
-//# sourceMappingURL=index.js.map

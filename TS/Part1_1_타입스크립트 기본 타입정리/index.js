@@ -9,4 +9,3 @@ function test함수(x) {
 }
 var john = [123, true];
 var john2 = { name: "kim" };
-//# sourceMappingURL=index.js.map

@@ -18,4 +18,3 @@ var project = {
     days: 30,
     started: true,
 };
-//# sourceMappingURL=index.js.map

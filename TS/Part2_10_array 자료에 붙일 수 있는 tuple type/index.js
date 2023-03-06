@@ -36,4 +36,3 @@
 //   });
 // }
 // 분류기함수();
-//# sourceMappingURL=index.js.map

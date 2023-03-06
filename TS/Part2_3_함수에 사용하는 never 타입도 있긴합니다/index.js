@@ -17,4 +17,3 @@ function 테스트함수5(parameter) {
 var 테스트함수6 = function () {
     throw new Error();
 };
-//# sourceMappingURL=index.js.map

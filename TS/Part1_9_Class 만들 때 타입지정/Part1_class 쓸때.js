@@ -51,4 +51,3 @@ var Word = /** @class */ (function () {
 var obj = new Word("kim", 3, 5, "park");
 console.log(obj.num);
 console.log(obj.str);
-//# sourceMappingURL=Part1_class%20%EC%93%B8%EB%95%8C.js.map
