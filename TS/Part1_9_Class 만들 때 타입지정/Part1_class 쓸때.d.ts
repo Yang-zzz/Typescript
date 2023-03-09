@@ -1,13 +1,6 @@
-declare class Car {
-    model: string;
-    price: number;
-    constructor(a: string, b: number);
-    tax(): number;
-}
-declare let car1: Car;
-declare class Word {
+declare class Word3 {
     str: string[];
     num: number[];
     constructor(...param: (number | string)[]);
 }
-declare let obj: Word;
+declare let obj2: Word3;

@@ -23,6 +23,19 @@ type Animal3 = {
 type Cat = {
     age: number;
 } & Animal3;
+interface Gajun {
+    brand: string;
+    serialNumber: number;
+    modal: string[];
+}
+interface Mart {
+    product: string;
+    price: number;
+}
+declare let 장바구니3: MartPlus[];
+interface MartPlus extends Mart {
+    card: boolean;
+}
 interface Product {
     brand: string;
     serialNumber: number;
