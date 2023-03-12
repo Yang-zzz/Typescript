@@ -49,12 +49,6 @@ interface MartPlus extends Mart {
 } 
 
 //숙제4 다시풀기
-
-
-
-
-
-
 // 숙제1
 interface Product {
   brand: string;
