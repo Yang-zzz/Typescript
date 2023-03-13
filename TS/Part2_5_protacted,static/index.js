@@ -35,18 +35,20 @@ var NewUser = /** @class */ (function (_super) {
 // 차이점
 // private 키워드가 부여된 변수는 해당 클래스에게 상속받은(extends) 클래스에서 쓸 수 없다.
 // protected 키워드가 부여된 변수는 해당 클래스에게 상속받은(extends) 클래스에서 사용 할 수 있다.
-// Static
+// Static : 부모만 사용할 수 있는 필드값을 만들고자 사용
 var TestUser2 = /** @class */ (function () {
     function TestUser2() {
         this.y = 20;
     }
-    // private static x = 10;
+    // private static x = 10; //
     TestUser2.x = 10;
     return TestUser2;
 }());
 var 테스트자식 = new TestUser2();
-// console.log(테스트자식.x); // TestUser2()를 통해 생성된 instance 테스트자식에서는 'x' 에 접근이 안됨
-console.log(TestUser2.x); // TestUser2() 클래스가 직접 접근할 경우 가능
+// console.log(테스트자식.x);
+// TestUser2()를 통해 생성된 instance 테스트자식에서는 'x' 에 접근이 안됨
+console.log(TestUser2.x);
+// TestUser2() 클래스가 직접 접근할 경우 가능
 // static 변수 또는 함수에 키워드가 있다면, 부모 클래스를 통해 접근해야 사용 가능함. 해당 변수(또는 함수)는 자녀에게 상속되지 않음.
 var TestUser3 = /** @class */ (function () {
     function TestUser3() {
@@ -58,7 +60,7 @@ var TestUser3 = /** @class */ (function () {
 }());
 var 테스트철수 = new TestUser3();
 console.log(테스트철수);
-//숙제1 : 누가 쓸 수 있는지 수정할 수 있는지
+// 숙제1 : 누가 쓸 수 있는지 수정할 수 있는지
 var 숙제User = /** @class */ (function () {
     function 숙제User() {
         this.z = 30; // 해당 클래스와 extends(상속)받은 클래스에서도 사용할 수 있음.
