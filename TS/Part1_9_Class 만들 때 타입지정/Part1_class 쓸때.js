@@ -83,6 +83,6 @@ var Word3 = /** @class */ (function () {
     }
     return Word3;
 }());
-var obj2 = new Word3("kim", 3, 5, "park");
-console.log(obj2.num);
-console.log(obj2.str);
+var obj4 = new Word3("kim", 3, 5, "park");
+console.log(obj4.num);
+console.log(obj4.str);

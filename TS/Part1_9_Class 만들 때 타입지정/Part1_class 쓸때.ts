@@ -91,6 +91,6 @@ class Word3 {
   }
 }
 
-let obj2 = new Word3("kim", 3, 5, "park");
-console.log(obj2.num);
-console.log(obj2.str);
+let obj4 = new Word3("kim", 3, 5, "park");
+console.log(obj4.num);
+console.log(obj4.str);

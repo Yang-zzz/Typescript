@@ -1,5 +1,5 @@
 let obj1 = { name: "kim", age: 20 };
-Object.keys(obj);
+Object.keys(obj1);
 
 // 파라미터로 들어가는 객체의 키값을 array 로 묶어줌. ->  ['name','age']
 // 위와 유사한 연산자 keyof

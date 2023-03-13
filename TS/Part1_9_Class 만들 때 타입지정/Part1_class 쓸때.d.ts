@@ -3,4 +3,4 @@ declare class Word3 {
     num: number[];
     constructor(...param: (number | string)[]);
 }
-declare let obj2: Word3;
+declare let obj4: Word3;
