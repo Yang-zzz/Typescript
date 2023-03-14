@@ -10,3 +10,10 @@ interface LengthCheck {
 }
 declare function 함수테스트4<MyType extends LengthCheck>(x: MyType): number;
 declare let a4: number;
+interface Animal4 {
+    name: string;
+    age: number;
+}
+declare let data: string;
+declare function 애니멀테스트<Type>(x: string): Type;
+declare let result: Animal;

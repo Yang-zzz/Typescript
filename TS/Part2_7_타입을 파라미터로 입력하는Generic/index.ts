@@ -6,18 +6,18 @@ let a = 함수테스트([4, 2]);
 console.log(a);
 // unknown 타입의 a 파라미터를 받아, 숫자 형태의 데이터를 반환 하더라도 a의 타입은 unknow이다.
 // 때문에 a의 타입을 명확히 해줄 필요가 있는데, 명확히 하기 위해선 2가지 방법이 있다.
+
 // 1. narrowing or as 를 사용해야 함.
 // 2. Generic 함수 만들어야 함. (파라미터로 타입을 입력하는 함수)
 function 함수테스트2<MyType>(a: MyType[]): MyType {
   return a[0];
 }
-
 let a2 = 함수테스트2<number>([4, 2]); // 타입 생략도 가능하지만, 명시해두는 것이 좋아보인다.
 let b = 함수테스트2<string>(["4", "2"]); // 도출하고 싶은 값에 따라 유동적으로 변할 수 있다.(확장성)
 console.log(a2);
 
+//예시
 //타입 파라미터 제한두기
-
 function 함수테스트3<MyType extends number>(x: MyType) {
   return x - 1;
 }
@@ -25,9 +25,10 @@ let a3 = 함수테스트3<number>(100);
 // extends 우측에 명시되어 있는 타입인지 확인 시켜달라는 뜻 (커스텀타입도 가능함)
 // Mytype 이  number 타입을 만족 시키는 지 (number 속성을 가지고 있는지) 확인
 
+//예시
 interface LengthCheck {
-    length: number;
-  }
+  length: number;
+}
 function 함수테스트4<MyType extends LengthCheck>(x: MyType) {
   return x.length;
 }
@@ -35,4 +36,20 @@ let a4 = 함수테스트4<string[]>(["100"]);
 
 // extends 우측에 명시되어 있는 타입인지 확인 시켜달라는 뜻 (커스텀타입도 가능함)
 // Mytype 이 LengthCheck 타입을 만족시키는지 (LengthCheck 커스텀 속성을 가지고 있는지) 확인
+// LegnthCheck 인터페이스를 통해, narrowing을 할 수 있음.
+// length 메서드는 string에서만 사용할 수 있는 메서드로, number 타입의 데이터는 length를 적용시킬 수 없다 때문에, 인터페이스를 작성하고 extends 함으로써 narrowing을 할 수 있게 되었음.
 
+//숙제2
+interface Animal4 {
+  name: string;
+  age: number;
+}
+
+let data = '{"name" : "dog", "age" : 1 }';
+
+function 애니멀테스트<Type>(x: string) :Type {
+  return JSON.parse(x);
+}
+
+let result = 애니멀테스트<Animal>(data);
+console.log(typeof(result));
