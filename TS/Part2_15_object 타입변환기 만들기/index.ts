@@ -11,7 +11,7 @@ interface Person2 {
 
 // Person2 객체가 가지고 있는 키값을 가져와 유니온타입을 생성함. -> 'age' | 'name'
 type PersonKeys = keyof Person2;
-let aa: PersonKeys = "age";
+let aa2: PersonKeys = "age";
 
 // index signature
 interface Person3 {
@@ -32,3 +32,23 @@ type TypeChanger<MyType> = {
 };
 
 type 새로운타입 = TypeChanger<testCar2>;
+
+// 숙제1
+type Car5 = {
+  color: boolean,
+  model : boolean,
+  price : boolean | number,
+};
+
+type TypeChanger2 <MyType> = {
+  [key in keyof MyType]: string;
+};
+// 기존에 작성한 타입 오브젝트에서 키값을 가져오고 type 을 변경하고 싶을 땐?
+
+type 새로운타입2 = TypeChanger<Car5>;
+
+let obj :새로운타입2 = {
+  color: 'red',
+  model : 'kia',
+  price : '300',
+}

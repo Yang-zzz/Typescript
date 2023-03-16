@@ -5,6 +5,8 @@ interface StringOnly {
   [key: string]: string;
   [key: number]: string;
 }
+// [key: string] == 모든 string type 속성
+// [key: number] == 모든 number type 속성
 
 let testuser: StringOnly = {
   name: "kim",
@@ -38,6 +40,9 @@ let css: MyType = {
     },
   },
 };
+interface TestCar2 {
+  [key: string]: string | number;
+}
 
 // 숙제1
 interface testCar {
@@ -61,7 +66,7 @@ interface Size {
 }
 
 let testobj2 = {
-  "font-size": 10,
+  test: 10,
   secondary: {
     "font-size": 12,
     third: {

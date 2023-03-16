@@ -7,6 +7,9 @@ interface MyType {
     "font-size": MyType | number;
 }
 declare let css: MyType;
+interface TestCar2 {
+    [key: string]: string | number;
+}
 interface testCar {
     [key: string]: string | number;
 }
@@ -16,7 +19,7 @@ interface Size {
     [key: string]: number | Size;
 }
 declare let testobj2: {
-    "font-size": number;
+    test: number;
     secondary: {
         "font-size": number;
         third: {

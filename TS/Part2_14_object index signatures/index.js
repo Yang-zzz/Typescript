@@ -1,5 +1,7 @@
 // index singnature 쓰면, object 타입지정 한번에 가능
 // object 타입 지정 한번에
+// [key: string] == 모든 string type 속성
+// [key: number] == 모든 number type 속성
 var testuser = {
     name: "kim",
     age: "20",
@@ -25,7 +27,7 @@ var testobj = {
     dealer: "김차장",
 };
 var testobj2 = {
-    "font-size": 10,
+    test: 10,
     secondary: {
         "font-size": 12,
         third: {

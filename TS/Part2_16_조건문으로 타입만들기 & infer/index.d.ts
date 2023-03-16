@@ -1,9 +1,9 @@
 type Agetest<T> = T extends string ? string : unknown;
 declare let test: Agetest<string>;
 declare let test2: Agetest<number>;
-type FirstItem<T> = T extends any[] ? T[0] : any;
+type FirstItem<T> = T extends any[] ? T[1] : any;
 declare let test3: FirstItem<string[]>;
-declare let test4: FirstItem<number>;
+declare let test4: FirstItem<number[]>;
 type TestPerson<T> = T extends infer R ? string : unknown;
 declare let test5: TestPerson<string>;
 type 타입추출<T> = T extends (infer R)[] ? R : unknown;
@@ -11,3 +11,4 @@ declare let test6: 타입추출<string[]>;
 type 타입추출2<T> = T extends () => infer R ? R : unknown;
 declare let test7: 타입추출2<() => void>;
 type b = ReturnType<() => void>;
+type AgeType<T> = T extends string ? string : unknown;
