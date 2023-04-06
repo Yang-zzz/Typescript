@@ -1,6 +1,6 @@
 declare function add(n1: number, n2: number, showResult: boolean, phrase: string): number | undefined;
-declare const number1 = 5;
-declare const number2 = 2.8;
+declare const number1: number;
+declare let number2: number;
 declare const printResult = true;
 declare const resultPhrase = "Result is : ";
 /**
@@ -14,6 +14,7 @@ declare const resultPhrase = "Result is : ";
  * */
 /**
  * Part2
- * TypeScript 는 명시적으로 해당 변수의 타입을 지정할 수 있다.
+ * TypeScript 는 명시적으로 해당 변수의 타입을 지정할 수 있으나 변수의 값이 할당되었다면, 해당 값의 타입을 추론할 수 있다.
+ *
  * Javascript 는 변수에 할당된 값을 보고 변수의 타입을 추론할 수 있다.
  */

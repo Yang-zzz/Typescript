@@ -13,8 +13,11 @@ function add(n1: number, n2: number, showResult: boolean, phrase: string) {
   }
 }
 
-const number1 = 5;
-const number2 = 2.8;
+// const number1 = 5;
+const number1:number = 5; // 명시적으로 작성하였지만 위 add함수에서 param에 타입을 명시하여 중복작성할 필요가 없다.
+let number2 = 2.8;
+// number2를 let으로 선언하여 이후 number2 값을 재할당 할 수 있기 때문에 number2에게 명시적으로 타입을 지정하지 않아도 number 타입으로 추론이 가능하다.
+// number2 = '2.8' // 타입오류를 나타낸다.
 const printResult = true;
 const resultPhrase = "Result is : ";
 add(number1, number2, printResult, resultPhrase);
@@ -31,6 +34,7 @@ add(number1, number2, printResult, resultPhrase);
 
 /**
  * Part2
- * TypeScript 는 명시적으로 해당 변수의 타입을 지정할 수 있다.
+ * TypeScript 는 명시적으로 해당 변수의 타입을 지정할 수 있으나 변수의 값이 할당되었다면, 해당 값의 타입을 추론할 수 있다.
+ * 
  * Javascript 는 변수에 할당된 값을 보고 변수의 타입을 추론할 수 있다.
  */
