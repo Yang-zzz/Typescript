@@ -22,7 +22,7 @@ console.log(person2.name);
 // 타입스크립트 튜플타입 예제
 person2.role.push("admin");
 person2.role.push(54);
-console.log(person2.role);
+console.log("25번째 줄" + person2.role);
 // person2.role[1] = 10;
 // person2.role[2] = 10;
 /**

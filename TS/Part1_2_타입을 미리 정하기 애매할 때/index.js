@@ -14,7 +14,7 @@ var 라이크송 = {
     song: "비행",
 };
 var project = {
-    member: ["kim", "park"],
     days: 30,
+    member: ["kim", "park"],
     started: true,
 };

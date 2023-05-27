@@ -16,7 +16,7 @@ let 라이크송: { singer: string; song: string } = {
 };
 
 let project: { member: string[]; days: number; started: boolean } = {
-  member: ["kim", "park"],
   days: 30,
+  member: ["kim", "park"],
   started: true,
 };
